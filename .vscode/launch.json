@@ -9,8 +9,12 @@
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
             "program": "${file}",
-            "pythonPath": "${config:python.pythonPath}"
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "envFile": "${workspaceRoot}/.env"
         },
         {
             "name": "Python: Attach",
